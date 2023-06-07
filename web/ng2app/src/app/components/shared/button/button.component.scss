@@ -1,0 +1,56 @@
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+button {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: rgb(199, 13, 78);
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(168, 4, 42);
+}
+
+button[loading=true] {
+    background-color: rgba(168, 4, 42, 0.5);
+}

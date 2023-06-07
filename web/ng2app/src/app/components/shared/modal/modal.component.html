@@ -1,0 +1,19 @@
+<div class="modal" #modal>
+    <div class="modal-wrapper">
+        <div (click)="destroyModal()" class="modal-close">&times;</div>
+        <form #myForm="ngForm" class="modal-form">
+            <div class="modal-file-input">
+                <input type="file" (change)="handleFileInput($event.target)" #file>
+            </div>
+            <div class="modal-input">
+                <input name="name" [(ngModel)]="model.name" type="text">
+            </div>
+            <div class="modal-input">
+                <input name="name" [(ngModel)]="model.age" type="text">
+            </div>
+            <div class="modal-button">
+                <button (click)="submitModal(myForm)" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

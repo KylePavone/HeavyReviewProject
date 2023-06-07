@@ -1,0 +1,32 @@
+<div class="entry-wrapper">
+    <section class="now">
+        <div class="now-title">Послушай сегодня</div>
+        <div class="now-content">
+            <div *ngFor="let item of data">
+                <app-item-cart [routerLink]="['/album', item.id]" [imageSrc]="item.image_link" [description]="item.description"></app-item-cart>
+            </div>
+        </div>
+        <div class="now-show-more">
+            <app-button [loading]="loading" (click)="showMore()" [text]="'Показать еще'"></app-button>
+        </div>
+    </section>
+    <section class="news">
+        <div class="news-title">Актуальные новости из мира тяжелой музыки</div>
+        <div class="news-content">
+            <div *ngFor="let item of news">
+                <app-news-item [title]="item.title"></app-news-item>
+            </div>
+        </div>
+    </section>
+
+    <section class="vote">
+        <div class="vote-content">
+            <div class="vote-inner">
+                <div class="vote-card"></div>
+            </div>
+        </div>
+    </section>
+
+    <app-button [text]="'Modal'" (click)="clickBtn()"></app-button>
+    <app-modal #modal></app-modal>
+</div>

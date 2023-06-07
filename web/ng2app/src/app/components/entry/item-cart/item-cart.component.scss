@@ -1,0 +1,31 @@
+.item-cart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.item-cart:hover {
+    transform: translateY(-10px);
+}
+
+.item-cart-image {
+    margin-bottom: 20px;
+}
+
+.item-cart-image img {
+    width: 100%;
+}
+
+.item-cart-description {
+    -webkit-text-stroke: 0.5px #000000;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 10px;
+}

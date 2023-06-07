@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    background-color: #1E1E1E;
+}
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+}
+.footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-social-media {
+    display: flex;
+    gap: 20px;
+}
+.footer-copy {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.footer-form {
+
+}
+
+.footer-form-email {
+
+}

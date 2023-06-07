@@ -1,0 +1,30 @@
+@import "../../../assets/static/_variables";
+
+
+.main-nav-body {
+    position: relative;
+    margin: 30px 10px 10px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+    .main-nav-list {
+        display: flex;
+        flex-direction: column;
+
+        .main-nav-list-item {
+            display: flex;
+            align-items: center;
+            padding: 6px;
+        }
+        .main-nav-list-item a {
+            color: $white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
